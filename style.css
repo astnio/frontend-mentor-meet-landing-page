@@ -7,6 +7,10 @@
 	box-sizing: border-box;
 }
 
+img {
+	max-width: 100%;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -44,4 +48,78 @@ body {
 
 body {
 	font-family: 'Red Hat Display', sans-serif;
+}
+
+header,
+main,
+footer {
+	padding-inline: var(--spacing-1400);
+}
+
+.hero-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: var(--spacing-200);
+	max-width: 100%;
+	min-height: 10rem;
+}
+
+.button {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+
+	padding-inline: var(--spacing-500);
+	min-height: 3.4rem;
+
+	text-decoration: none;
+	font-weight: 900;
+
+	border-radius: 50px;
+
+	bottom: 0;
+
+	transition-property: color, background-color, bottom;
+	transition-duration: 0.15s;
+}
+
+.button:hover {
+	bottom: 4px;
+}
+
+.button__download-version-number {
+	opacity: 75%;
+	mix-blend-mode: overlay;
+}
+
+.btn-primary {
+	background-color: var(--clr-cyan-600);
+	color: var(--clr-white);
+}
+
+.btn-secondary {
+	background-color: var(--clr-purple-600);
+	color: var(--clr-white);
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+}
+
+.hero-content-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.screen-big-only {
+	display: none;
 }

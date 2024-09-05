@@ -19,34 +19,61 @@
 		<title>Frontend Mentor | Meet landing page</title>
 	</head>
 	<body>
-		<header>
-			<picture>
-				<img
-					src="./assets/logo.svg"
-					alt="" />
+		<header class="hero">
+			<picture class="hero-image-big hero-image-left screen-big-only">
+				<img src="./assets/desktop/image-hero-left.png" />
 			</picture>
-			<h1>Group Chat for Everyone</h1>
-			<h2>
-				Meet makes it easy to connect with others face-to-face virtually and
-				collaborate across any device.
-			</h2>
-			<div>
-				<a href="#">Download v1.3</a>
-				<a href="#">What is it?</a>
+			<div class="hero-content-container">
+				<picture class="logo">
+					<img
+						src="./assets/logo.svg"
+						alt="" />
+				</picture>
+				<picture class="hero-image-medium screen-medium-only">
+					<img src="./assets/tablet/image-hero.png" />
+				</picture>
+				<h1 class="title-1">Group Chat for Everyone</h1>
+				<h2 class="paragraph">
+					Meet makes it easy to connect with others face-to-face virtually and
+					collaborate across any device.
+				</h2>
+				<div class="hero-links">
+					<a
+						class="button btn-primary"
+						href="#">
+						Download <span class="button__download-version-number">v1.3</span>
+					</a>
+					<a
+						class="button btn-secondary"
+						href="#">
+						What is it?
+					</a>
+				</div>
 			</div>
+			<picture class="hero-image-big hero-image-right screen-big-only">
+				<img src="./assets/desktop/image-hero-right.png" />
+			</picture>
 		</header>
 
 		<main>
 			<div>01</div>
-			<div>
-				<picture></picture>
-				<picture></picture>
-				<picture></picture>
-				<picture></picture>
+			<div class="main-image-grid">
+				<picture>
+					<img src="./assets/desktop/image-woman-in-videocall.jpg" />
+				</picture>
+				<picture>
+					<img src="./assets/desktop/image-women-videochatting.jpg" />
+				</picture>
+				<picture>
+					<img src="./assets/desktop/image-men-in-meeting.jpg" />
+				</picture>
+				<picture>
+					<img src="./assets/desktop/image-man-texting.jpg" />
+				</picture>
 			</div>
-			<p>Built for modern use</p>
-			<h2>Smarter meetings, all in one place</h2>
-			<p>
+			<p class="subtitle">Built for modern use</p>
+			<h2 class="title-2">Smarter meetings, all in one place</h2>
+			<p class="paragraph">
 				Send messages, share files, show your screen, and record your meetings —
 				all in one workspace. Control who can join with invite-only team access,
 				data encryption, and data export.
@@ -55,13 +82,17 @@
 
 		<footer>
 			<div>02</div>
-			<div>
-				<h2>Experience more together</h2>
-				<p>
+			<div class="footer-content-container">
+				<h2 class="title-2">Experience more together</h2>
+				<p class="paragraph">
 					Stay connected with reliable HD meetings and unlimited one-on-one and
 					group video sessions.
 				</p>
-				<a href="">Download v1.3</a>
+				<a
+					class="button btn-secondary"
+					href="">
+					Download <span class="button__download-version-number">v1.3</span>
+				</a>
 			</div>
 		</footer>
 	</body>
