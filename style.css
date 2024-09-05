@@ -3,6 +3,19 @@
 	src: url('./assets/fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf');
 }
 
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	min-height: 100vh;
+
+	margin: 0;
+}
+
 :root {
 	--clr-cyan-600: rgb(77, 150, 168);
 	--clr-cyan-300: rgb(143, 227, 249);
