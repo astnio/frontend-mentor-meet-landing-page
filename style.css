@@ -125,6 +125,19 @@ footer {
 	color: var(--clr-white);
 }
 
+/*** Images ***/
+
+.main-image-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--spacing-700);
+    margin-block: 5rem;
+}
+
+.main-image-grid > picture > img {
+	border-radius: 20px;
+}
+
 /*** General ***/
 
 .numeric-marker {
