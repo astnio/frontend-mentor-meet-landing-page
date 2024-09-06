@@ -73,6 +73,63 @@ footer {
 	margin-bottom: 4rem;
 }
 
+/*** Hero ***/
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: var(--spacing-200);
+	max-width: 100%;
+	min-height: 10rem;
+}
+
+.hero-content-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+
+	text-align: center;
+}
+
+/*** Images ***/
+
+.logo {
+	margin-bottom: 4rem;
+}
+
+.hero-image-medium-screen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.hero-image-big-screen {
+	display: none;
+}
+
+.main-image-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--spacing-700);
+	margin-block: 5rem;
+}
+
+.main-image-grid > picture > img {
+	border-radius: 20px;
+}
+
 /*** Button ***/
 
 .button {
@@ -127,30 +184,6 @@ footer {
 	color: var(--clr-white);
 }
 
-/*** Images ***/
-
-.logo {
-	margin-bottom: 4rem;
-}
-
-.main-image-grid {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: var(--spacing-700);
-	margin-block: 5rem;
-}
-
-.main-image-grid > picture > img {
-	border-radius: 20px;
-}
-
-.hero-image-medium {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-}
-
 /*** Text ***/
 
 .title-1 {
@@ -171,6 +204,12 @@ footer {
 	font-weight: 800;
 	letter-spacing: 0.15ch;
 	color: var(--clr-cyan-600);
+}
+
+.paragraph {
+	color: var(--clr-slate-600);
+	font-size: 1rem;
+	font-weight: 500;
 }
 
 /*** General ***/
@@ -204,43 +243,6 @@ footer {
 	height: var(--numeric-marker-line-height);
 	width: 2px;
 	bottom: 100%;
-}
-
-.hero-links {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: var(--spacing-200);
-	max-width: 100%;
-	min-height: 10rem;
-}
-
-.paragraph {
-	color: var(--clr-slate-600);
-	font-size: 1rem;
-	font-weight: 500;
-}
-
-.hero {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.hero-content-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 1rem;
-
-	text-align: center;
-}
-
-.hero-image-big-screen {
-	display: none;
 }
 
 /*** Utility ***/
