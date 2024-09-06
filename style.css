@@ -113,6 +113,11 @@ footer {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	overflow: hidden;
+}
+
+.hero-image-medium-screen > img {
+	width: 110%;
 }
 
 .hero-image-big-screen {
@@ -248,4 +253,8 @@ footer {
 /*** Utility ***/
 .padding-inline {
 	padding-inline: var(--spacing-1400);
+}
+
+img.overflow-image {
+	max-width: fit-content;
 }
