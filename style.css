@@ -54,12 +54,6 @@ body {
 	color: var(--clr-slate-900);
 }
 
-header,
-main,
-footer {
-	padding-inline: var(--spacing-1400);
-}
-
 header {
 	margin-top: var(--spacing-1000);
 }
@@ -135,6 +129,10 @@ footer {
 
 /*** Images ***/
 
+.logo {
+	margin-bottom: 4rem;
+}
+
 .main-image-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -144,6 +142,13 @@ footer {
 
 .main-image-grid > picture > img {
 	border-radius: 20px;
+}
+
+.hero-image-medium {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
 /*** Text ***/
@@ -236,4 +241,9 @@ footer {
 
 .hero-image-big-screen {
 	display: none;
+}
+
+/*** Utility ***/
+.padding-inline {
+	padding-inline: var(--spacing-1400);
 }
