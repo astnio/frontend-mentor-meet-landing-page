@@ -128,9 +128,9 @@ footer {
 
 /*** Images ***/
 
-.logo {
+/* .logo {
 	margin-bottom: 4rem;
-}
+} */
 
 .hero-image-medium-screen {
 	display: flex;
@@ -138,6 +138,7 @@ footer {
 	justify-content: center;
 	width: 100%;
 	overflow: hidden;
+	margin-block: var(--spacing-500);
 }
 
 .hero-image-medium-screen > img {
@@ -151,11 +152,11 @@ footer {
 .main-image-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: var(--spacing-300);
+	gap: 1.4rem;
 }
 
 .main-image-grid > picture > img {
-	border-radius: 20px;
+	border-radius: 10px;
 }
 
 /*** Button ***/
@@ -289,5 +290,5 @@ img.overflow-image {
 }
 
 .max-width {
-	max-width: 350px;
+	max-width: 340px;
 }
