@@ -3,8 +3,19 @@
 	src: url('./assets/fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf');
 }
 
+/*** Reset ***/
+
 * {
 	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
 }
 
 img {
@@ -46,6 +57,11 @@ body {
 	--spacing-50: 4px;
 
 	--numeric-marker-line-height: 5rem;
+	--numeric-marker-margin-block: 4rem;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
@@ -89,7 +105,6 @@ footer {
 	justify-content: center;
 	gap: var(--spacing-200);
 	max-width: 100%;
-	min-height: 10rem;
 }
 
 .hero-content-container {
@@ -137,7 +152,6 @@ footer {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: var(--spacing-300);
-	margin-block: 5rem;
 }
 
 .main-image-grid > picture > img {
@@ -213,7 +227,7 @@ footer {
 }
 
 .subtitle {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 	font-weight: 800;
 	letter-spacing: 0.15ch;
@@ -240,8 +254,11 @@ footer {
 
 	max-width: fit-content;
 
-	padding: var(--spacing-200);
-	margin-top: var(--numeric-marker-line-height);
+	padding: var(--spacing-300);
+	margin-top: calc(
+		var(--numeric-marker-line-height) + var(--numeric-marker-margin-block)
+	);
+	margin-bottom: var(--numeric-marker-margin-block);
 
 	font-size: 1rem;
 	color: var(--clr-slate-600);
