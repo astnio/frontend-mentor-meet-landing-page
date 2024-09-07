@@ -56,7 +56,7 @@ body {
 	--spacing-100: 8px;
 	--spacing-50: 4px;
 
-	--numeric-marker-line-height: 5rem;
+	--numeric-marker-line-height: 6rem;
 	--numeric-marker-margin-block: 4rem;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 header {
-	margin-top: var(--spacing-1000);
+	margin-top: var(--spacing-700);
 }
 
 main {
@@ -112,9 +112,15 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
+	gap: var(--spacing-400);
 
 	text-align: center;
+}
+
+/*** Main ***/
+
+main > .subtitle {
+	margin-top: var(--spacing-700);
 }
 
 /*** Footer ***/
@@ -242,6 +248,7 @@ footer {
 	font-weight: 500;
 	max-width: 30ch;
 	text-align: center;
+	line-height: 2.4ch;
 }
 
 /*** General ***/
@@ -267,7 +274,7 @@ footer {
 
 	aspect-ratio: 1;
 
-	border: 2px solid var(--clr-slate-300);
+	border: 1px solid var(--clr-slate-300);
 	border-radius: 999px;
 }
 
@@ -276,7 +283,7 @@ footer {
 	content: '';
 	background-color: var(--clr-slate-300);
 	height: var(--numeric-marker-line-height);
-	width: 2px;
+	width: 1px;
 	bottom: 100%;
 }
 
