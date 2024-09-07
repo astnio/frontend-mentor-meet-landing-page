@@ -45,7 +45,7 @@ body {
 	--spacing-100: 8px;
 	--spacing-50: 4px;
 
-	--numeric-marker-line-height: 10rem;
+	--numeric-marker-line-height: 5rem;
 }
 
 body {
@@ -102,6 +102,15 @@ footer {
 	text-align: center;
 }
 
+/*** Footer ***/
+
+.footer-content-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 /*** Images ***/
 
 .logo {
@@ -127,7 +136,7 @@ footer {
 .main-image-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: var(--spacing-700);
+	gap: var(--spacing-300);
 	margin-block: 5rem;
 }
 
@@ -197,24 +206,27 @@ footer {
 }
 
 .title-2 {
-	font-size: 4rem;
+	font-size: 2.2rem;
 	font-weight: 900;
 	text-align: center;
-	line-height: 1.4ch;
+	line-height: 1.6ch;
 }
 
 .subtitle {
-	font-size: 2rem;
+	font-size: 1.4rem;
 	text-transform: uppercase;
 	font-weight: 800;
 	letter-spacing: 0.15ch;
 	color: var(--clr-cyan-600);
+	text-align: center;
 }
 
 .paragraph {
 	color: var(--clr-slate-600);
 	font-size: 1rem;
 	font-weight: 500;
+	max-width: 30ch;
+	text-align: center;
 }
 
 /*** General ***/
@@ -228,10 +240,10 @@ footer {
 
 	max-width: fit-content;
 
-	padding: var(--spacing-500);
+	padding: var(--spacing-200);
 	margin-top: var(--numeric-marker-line-height);
 
-	font-size: 2rem;
+	font-size: 1rem;
 	color: var(--clr-slate-600);
 	font-weight: 700;
 
@@ -257,4 +269,8 @@ footer {
 
 img.overflow-image {
 	max-width: fit-content;
+}
+
+.max-width {
+	max-width: 350px;
 }
