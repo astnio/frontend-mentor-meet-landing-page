@@ -336,3 +336,15 @@ img.overflow-image {
 .max-width {
 	max-width: 340px;
 }
+
+/*** *** Tablet *** ***/
+
+@media screen and (min-width: 640px) {
+	.max-width {
+		max-width: 580px;
+	}
+	.main-image-grid {
+		grid-template-columns: repeat(4, 1fr);
+		gap: var(--spacing-100);
+	}
+}
