@@ -364,3 +364,35 @@ img.overflow-image {
 		bottom: 70%;
 	}
 }
+
+@media screen and (min-width: 1280px) {
+	.max-width {
+		max-width: 1024px;
+	}
+
+	.footer-content-container {
+		flex-direction: row;
+		align-items: start;
+		justify-content: space-between;
+
+		width: 100%;
+	}
+
+	.footer-content-container > .title-2,
+	.footer-content-container > .paragraph {
+		text-align: start;
+	}
+
+	.footer-content-container > .title-2 {
+		max-width: 16ch;
+	}
+
+	.footer-content-container > .paragraph {
+		max-width: 29ch;
+		margin: 0;
+	}
+
+	div.footer-marker {
+		bottom: 60%;
+	}
+}
