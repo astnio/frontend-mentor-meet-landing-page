@@ -132,7 +132,6 @@ footer {
 	justify-content: center;
 
 	padding-block: var(--spacing-1000);
-	/* margin-top: var(--numeric-marker-line-height); */
 	margin-top: calc(
 		var(--numeric-marker-line-height) + var(--numeric-marker-margin-block)
 	);
