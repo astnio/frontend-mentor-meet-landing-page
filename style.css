@@ -375,12 +375,17 @@ img.overflow-image {
 /*** *** Desktop *** ***/
 
 @media screen and (min-width: 1280px) {
+	/*** General ***/
+
+	.paragraph {
+		line-height: 2.2ch;
+	}
+
 	/*** Hero ***/
 
 	.hero {
 		flex-direction: row;
 		gap: var(--spacing-1000);
-		max-width: 1024px;
 		margin-inline: auto;
 	}
 
@@ -420,6 +425,25 @@ img.overflow-image {
 	.hero-image-left > .overflow-image {
 		position: relative;
 		right: 2rem;
+	}
+
+	/*** Main ***/
+
+	main {
+		margin-block: var(--spacing-700);
+	}
+
+	.main-image-grid {
+		gap: var(--spacing-400);
+	}
+
+	main > .paragraph {
+		max-width: 42ch;
+		margin-top: var(--spacing-400);
+	}
+
+	main > .title-2.max-width {
+		max-width: 16ch;
 	}
 
 	/*** Footer ***/
