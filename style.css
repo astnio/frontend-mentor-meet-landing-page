@@ -359,4 +359,8 @@ img.overflow-image {
 	.paragraph {
 		max-width: 40ch;
 	}
+
+	div.footer-marker {
+		bottom: 70%;
+	}
 }
